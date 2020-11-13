@@ -120,19 +120,19 @@
 			    <execution>
 			      <id>default-prepare-agent</id>
 			      <goals>
-				<goal>prepare-agent</goal>
+							<goal>prepare-agent</goal>
 			      </goals>
 			    </execution>
 			    <execution>
 			      <id>default-report</id>
 			      <goals>
-				<goal>report</goal>
+							<goal>report</goal>
 			      </goals>
 			    </execution>
 			    <execution>
 			      <id>default-check</id>
 			      <goals>
-				<goal>check</goal>
+							<goal>check</goal>
 			      </goals>
 			      <configuration>
 				<rules>
@@ -150,7 +150,7 @@
 			      </configuration>
 			    </execution>
 			  </executions>
-			</plugin>			
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
