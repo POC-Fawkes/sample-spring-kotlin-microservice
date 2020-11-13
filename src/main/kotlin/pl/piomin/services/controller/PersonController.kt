@@ -24,6 +24,10 @@ class PersonController(var repository: PersonRepository) {
         }
         return "String"
     }
+    
+    protected fun seekMany(): List<Person> {
+        return repository.findAll()
+    }
 
     @GetMapping("/{id}")
     fun findById(@PathVariable id: Int): Person? = repository.findById(id)
@@ -40,4 +44,6 @@ class PersonController(var repository: PersonRepository) {
     @DeleteMapping("/{id}")
     fun remove(@PathVariable id: Int): Boolean = repository.removeById(id)
 
+    private fun findEveryone() = repository.findAll()
+    
 }
